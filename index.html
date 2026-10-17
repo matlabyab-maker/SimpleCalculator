@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ماشین حساب ساده</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="calculator" aria-label="ماشین حساب">
+    <h1>ماشین حساب</h1>
+    <input id="display" class="display" type="text" value="0" aria-label="نمایشگر" readonly>
+    <div class="keys">
+      <button class="utility" data-action="clear">C</button>
+      <button class="utility" data-action="delete">⌫</button>
+      <button data-value="(">(</button>
+      <button data-value=")">)</button>
+      <button data-value="7">۷</button>
+      <button data-value="8">۸</button>
+      <button data-value="9">۹</button>
+      <button class="operator" data-value="÷">÷</button>
+      <button data-value="4">۴</button>
+      <button data-value="5">۵</button>
+      <button data-value="6">۶</button>
+      <button class="operator" data-value="×">×</button>
+      <button data-value="1">۱</button>
+      <button data-value="2">۲</button>
+      <button data-value="3">۳</button>
+      <button class="operator" data-value="−">−</button>
+      <button data-value="0">۰</button>
+      <button data-value=".">.</button>
+      <button class="equals" data-action="calculate">=</button>
+      <button class="operator" data-value="+">+</button>
+    </div>
+    <p id="message" role="status"></p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
